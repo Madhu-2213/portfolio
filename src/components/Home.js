@@ -371,7 +371,7 @@ const Home = () => {
                   <LinkedInIcon fontSize={isXs ? "small" : "medium"} />
                 </IconButton>
                 <IconButton
-                  href="https://github.com/Madhu2213"
+                  href="https://github.com/Madhu-2213"
                   target="_blank"
                   sx={{
                     backgroundColor: '#24292E',

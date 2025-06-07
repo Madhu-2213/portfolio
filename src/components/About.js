@@ -23,7 +23,7 @@ const personalDetails = [
   { label: "Degree", value: "ECE, Bachelor of Technology (B.Tech)" },
   { label: "Email", value: "vallabhanenimadhavi22@gmail.com" },
   { label: "LinkedIn", value: " https://www.linkedin.com/in/madhavi-vallabhaneni-981b56251/ " },
-  { label: "GitHub", value: "https://github.com/Madhu2213" }
+  { label: "GitHub", value: "https://github.com/Madhu-2213" }
 ];
 
 const About = () => {

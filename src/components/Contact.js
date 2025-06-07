@@ -89,7 +89,7 @@ const contactInfo = [
   {
     icon: <GitHubIcon />,
     label: 'GitHub',
-    value: 'github.com/Madhu2213',
+    value: 'github.com/Madhu-2213',
     link: 'https://github.com/Madhu-2213 ',
     color: '#5e17eb',
   },

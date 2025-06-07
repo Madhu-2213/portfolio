@@ -29,7 +29,7 @@ const education = [
   {
     title: 'Bachelor of Technology (B.Tech)',
     date: '2019 - 2023',
-    content: 'Priyadarshini Institute of Technology - Electronics and Communication Engineering (ECE)',
+    content: 'Priyadarshini Institute of Science and Technology for Women- Electronics and Communication Engineering (ECE)',
   },
   {
     title: 'Intermediate (12th Grade)',

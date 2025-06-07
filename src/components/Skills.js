@@ -19,6 +19,7 @@ const skills = [
   { label: 'Core Java', value: 82 },
   { label: 'Python', value: 79 },
   { label: 'Bootstrap', value: 89 },
+  { label: 'SQL', value: 92 },
 ];
 
 const AnimatedCounter = ({ value }) => {

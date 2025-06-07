@@ -58,6 +58,7 @@ const DescriptionWrapper = styled(Box)({
   overflow: "hidden",
 });
 
+
 const TechWrapper = styled(Box)({
   height: "60px",
   marginBottom: "16px",
@@ -81,56 +82,56 @@ const projects = [
   {
     title: "E-Commerce Website",
     description: "An e-commerce platform with cart, payment gateway, and admin dashboard.",
-    tech: ["React", "Node.js", "Stripe", "MongoDB"],
+    tech: ["HTML", "CSS", "JavaScript", "Firebase"],
     year: "2024",
-    image: "/images/ecommerce.jpg",
-    link: "https://your-ecommerce.com",
-    github: "https://github.com/yourusername/ecommerce"
+    image: "/images/Souwild.jpg",
+    link: "https://sou-wild.web.app/",
+    github: "https://github.com/Madhu-2213/Sou-Wild"
   },
   {
-    title: "Personal Blog",
-    description: "A markdown-based blog with SEO, social sharing, and reading analytics.",
-    tech: ["Next.js", "GraphQL", "Tailwind", "Vercel"],
-    year: "2023",
-    image: "/images/blog.jpg",
-    link: "https://your-blog.com",
-    github: "https://github.com/yourusername/blog"
+    title: "Insurance Website",
+    description: "A responsive and modern insurance website showcasing services, plans, and contact options.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    year: "2024",
+    image: "/images/Insura.png",
+    link: "https://insurance-ae7d7.web.app/",
+    github: "https://github.com/Madhu-2213/Insura"
   },
   {
     title: "Portfolio Website",
     description: "A modern responsive portfolio website built with React and animations.",
-    tech: ["React", "CSS", "Framer Motion"],
-    year: "2023",
-    image: "/images/portfolio.jpg",
-    link: "https://your-portfolio.com",
+    tech: ["React", "Material UI", "Framer Motion"],
+    year: "2024",
+    image: "/images/Pf.png",
+    link: "https://madhavi-vallabhaneni-22.web.app/",
     github: "https://github.com/yourusername/portfolio"
   },
   {
-    title: "Design System",
-    description: "A reusable design system with styled-components and accessibility in mind.",
-    tech: ["React", "Styled-Components", "Figma"],
-    year: "2023",
-    image: "/images/designsystem.jpg",
-    link: "https://your-designsystem.com",
-    github: "https://github.com/yourusername/design-system"
+    title: "Water Bottles Website",
+    description: "Website for showcasing and selling water bottles. Built with HTML, CSS, and JavaScript. Hosted on Firebase.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    year: "2024",
+    image: "/images/Water Bottle.png",
+    link: "https://h2go-84202.web.app/",
+    github: "https://github.com/Madhu-2213/H2GO-Water-Bottle"
   },
   {
-    title: "Admin Dashboard",
-    description: "A powerful dashboard with analytics, user management, and dynamic charts.",
-    tech: ["Vue.js", "D3.js", "Firebase"],
-    year: "2022",
-    image: "/images/dashboard.jpg",
-    link: "https://your-dashboard.com",
-    github: "https://github.com/yourusername/admin-dashboard"
+    title: "Diabetes Awareness Website",
+    description: "A simple diabetes info site that helps users understand sugar levels and health tips. Built with HTML, CSS, and JavaScript. Hosted on Firebase.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    year: "2024",
+    image: "/images/Glyco-check.png",
+    link: "https://glyco-check.web.app/",
+    github: "https://github.com/Madhu-2213/Glyko-check"
   },
   {
-    title: "Task Manager App",
-    description: "A Kanban-style task tracker with drag & drop and real-time sync.",
-    tech: ["React", "Redux", "Socket.io"],
-    year: "2022",
-    image: "/images/taskmanager.jpg",
-    link: "https://your-taskmanager.com",
-    github: "https://github.com/yourusername/task-manager"
+    title: "Mobile Case Website",
+    description: "A simple and responsive website to browse and buy mobile cases online.",
+    tech: ["React js", "Material UI", "Responsive Design"],
+    year: "2024",
+    image: "/images/phone glow.png",
+    link: "https://mobilecase-demo.web.app/",
+    github: "https://github.com/Madhu-2213/Phone-glow"
   },
 ];
 
