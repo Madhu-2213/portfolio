@@ -84,7 +84,7 @@ const projects = [
     description: "An e-commerce platform with cart, payment gateway, and admin dashboard.",
     tech: ["HTML", "CSS", "JavaScript", "Firebase"],
     year: "2024",
-    image: "/images/Souwild.jpg",
+    image: "/images/SouWild.jpg",
     link: "https://sou-wild.web.app/",
     github: "https://github.com/Madhu-2213/Sou-Wild"
   },
