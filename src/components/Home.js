@@ -192,7 +192,7 @@ const Home = () => {
         background: 'linear-gradient(135deg, #f5f7fa 0%, #e9f0ff 100%)',
         display: 'flex',
         alignItems: 'center',
-        pt: { xs: 8, sm: 10, md: 12 }, // Account for navbar
+        pt: { xs: 4, sm: 6, md: 0 }, // Reduced top padding for a more compact header
       }}
     >
       {/* Custom Animated Background */}
@@ -388,23 +388,7 @@ const Home = () => {
                 >
                   <GitHubIcon fontSize={isXs ? "small" : "medium"} />
                 </IconButton>
-                <IconButton
-                  href="mailto:vallabhanenimadhavi22@gmail.com"
-                  sx={{
-                    backgroundColor: '#5e17eb',
-                    color: 'white',
-                    width: { xs: 40, sm: 44, md: 48 },
-                    height: { xs: 40, sm: 44, md: 48 },
-                    '&:hover': {
-                      backgroundColor: '#4313ad',
-                      transform: 'translateY(-3px)',
-                      boxShadow: '0 8px 15px rgba(94, 23, 235, 0.3)'
-                    },
-                    transition: 'all 0.3s ease',
-                  }}
-                >
-                  <EmailIcon fontSize={isXs ? "small" : "medium"} />
-                </IconButton>
+                
               </Stack>
             </motion.div>
 
@@ -547,6 +531,7 @@ const Home = () => {
                   zIndex: 1,
                 }}
               >
+                
                 <Box
                   component="img"
                   src="/images/Madhavi.jpg"

@@ -4,6 +4,9 @@ import {
   Typography,
   Grid,
   Paper,
+  Fade,
+  useMediaQuery,
+  Divider
 } from '@mui/material';
 import { motion } from 'framer-motion';
 
@@ -49,6 +52,8 @@ const AnimatedCounter = ({ value }) => {
 };
 
 const Skills = () => {
+  const isExtraSmall = useMediaQuery('(max-width: 400px)');
+  const isSmallMobile = useMediaQuery('(max-width: 600px)');
   return (
     <Box
       id="skills"
@@ -59,17 +64,73 @@ const Skills = () => {
         px: { xs: 3, md: 8 },
       }}
     >
-      <Typography
-        variant="h3"
-        align="center"
-        fontWeight="bold"
-        mb={8}
-        sx={{
-          color: '#111',
-        }}
-      >
-        My <span style={{ color: '#5e17eb' }}>Skills</span>
-      </Typography>
+      <Fade in timeout={800}>
+        <Box sx={{ mb: { xs: 3, sm: 4, md: 5 }, textAlign: "center" }}>
+          <Typography
+            variant={isExtraSmall ? "h4" : isSmallMobile ? "h3" : "h3"}
+            component="h2"
+            fontWeight="bold"
+            sx={{
+              mb: { xs: 1.5, sm: 2 },
+              color: "#5e17eb",
+              fontSize: {
+                xs: "1.75rem",
+                sm: "2.125rem",
+                md: "3rem"
+              }
+            }}
+          >
+           My Skills
+          </Typography>
+
+          <Box sx={{
+            display: "flex",
+            justifyContent: "center",
+            mb: { xs: 2, sm: 3 },
+            px: { xs: 2, sm: 0 }
+          }}>
+            <Divider
+              sx={{
+                width: { xs: 50, sm: 60, md: 80 },
+                height: { xs: 2, md: 3 },
+                backgroundColor: "#e0e0e0"
+              }}
+            />
+            <Divider
+              sx={{
+                width: { xs: 50, sm: 60, md: 80 },
+                height: { xs: 2, md: 3 },
+                backgroundColor: "#5e17eb",
+                mx: 0.5,
+              }}
+            />
+            <Divider
+              sx={{
+                width: { xs: 50, sm: 60, md: 80 },
+                height: { xs: 2, md: 3 },
+                backgroundColor: "#e0e0e0"
+              }}
+            />
+          </Box>
+
+
+          <Typography
+            variant="body1"
+            color="text.secondary"
+            sx={{
+              maxWidth: { xs: "100%", sm: 600, md: 900 },
+              mx: "auto",
+              px: { xs: 1, sm: 2 },
+              lineHeight: { xs: 1.6, md: 1.8 },
+              mb: { xs: 3, sm: 4, md: 5 },
+              fontSize: { xs: "0.9rem", sm: "1rem", md: "1.1rem" }
+            }}
+          >
+            Proficient in modern web technologies and frameworks, with a strong focus on creating responsive and efficient applications.
+            Continuously learning and adapting to new tools and best practices in the ever-evolving tech landscape.
+          </Typography>
+        </Box>
+      </Fade>
 
       <Grid container spacing={5}>
         {skills.map((skill, i) => (

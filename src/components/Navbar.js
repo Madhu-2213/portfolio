@@ -13,7 +13,7 @@ const sections = [
   { icon: <HomeOutlinedIcon />, id: 'home', label: 'Home' },
   { icon: <PersonOutlineIcon />, id: 'about', label: 'About' },
   { icon: <DescriptionOutlinedIcon />, id: 'resume', label: 'Resume' },
-  { icon: <CollectionsOutlinedIcon />, id: 'portfolio', label: 'Portfolio' },
+  { icon: <CollectionsOutlinedIcon />, id: 'portfolio', label: 'Projects' },
   { icon: <ContactMailOutlinedIcon />, id: 'contact', label: 'Contact' },
 ];
 
@@ -22,7 +22,7 @@ const highlightVariants = {
   animate: {
     opacity: 1,
     scaleX: 1,
-    boxShadow: '0 0 12px 4px rgba(21, 101, 192, 0.7)',
+    boxShadow: '0 0 12px 4px rgba(94, 23, 235, 0.7)',
     transition: { type: 'spring', stiffness: 300, damping: 20 },
   },
   exit: { opacity: 0, scaleX: 0, transition: { duration: 0.2 } },
@@ -119,7 +119,7 @@ const NavBar = () => {
           variant="h5"
           sx={{
             fontWeight: 'bold',
-            color: '#1565c0',
+            color: '#5e17eb',
             letterSpacing: '1px',
           }}
         >
@@ -128,7 +128,7 @@ const NavBar = () => {
         <IconButton
           onClick={handleDrawerToggle}
           sx={{
-            color: '#1565c0',
+            color: '#5e17eb',
           }}
         >
           <CloseIcon />
@@ -153,9 +153,9 @@ const NavBar = () => {
                   mx: 1,
                   borderRadius: '12px',
                   mb: 1,
-                  backgroundColor: isActive ? 'rgba(21, 101, 192, 0.1)' : 'transparent',
+                  backgroundColor: isActive ? 'rgba(94, 23, 235, 0.1)' : 'transparent',
                   '&:hover': {
-                    backgroundColor: 'rgba(21, 101, 192, 0.15)',
+                    backgroundColor: 'rgba(94, 23, 235, 0.15)',
                     transform: 'translateX(8px)',
                   },
                   transition: 'all 0.3s ease',
@@ -163,7 +163,7 @@ const NavBar = () => {
               >
                 <ListItemIcon
                   sx={{
-                    color: isActive ? '#1565c0' : '#455a64',
+                    color: isActive ? '#5e17eb' : '#455a64',
                     minWidth: 40,
                   }}
                 >
@@ -176,7 +176,7 @@ const NavBar = () => {
                   primaryTypographyProps={{
                     fontSize: '1.1rem',
                     fontWeight: isActive ? 600 : 400,
-                    color: isActive ? '#1565c0' : '#455a64',
+                    color: isActive ? '#5e17eb' : '#455a64',
                   }}
                 />
               </ListItem>
@@ -223,15 +223,15 @@ const NavBar = () => {
             sx={{
               ...getNameFontSize(),
               fontWeight: 'bold',
-              color: '#1565c0',
+              color: '#5e17eb',
               letterSpacing: { xs: '1px', sm: '1.5px', md: '2px' },
               userSelect: 'none',
-              textShadow: '0 2px 4px rgba(21, 101, 192, 0.3)',
+              textShadow: '0 2px 4px rgba(94, 23, 235, 0.3)',
               cursor: 'pointer',
               transition: 'all 0.3s ease',
               '&:hover': {
-                color: '#0d47a1',
-                textShadow: '0 4px 8px rgba(21, 101, 192, 0.5)',
+                color: '#5e17eb',
+                textShadow: '0 4px 8px rgba(94, 23, 235, 0.5)',
               },
             }}
           >
@@ -261,14 +261,14 @@ const NavBar = () => {
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ rotate: 10, scale: 0.9 }}
                         sx={{
-                          color: isActive ? '#1565c0' : '#455a64',
+                          color: isActive ? '#5e17eb' : '#455a64',
                           transition: 'color 0.3s ease',
-                          filter: isActive ? 'drop-shadow(0 0 8px rgba(21, 101, 192, 0.7))' : 'none',
+                          filter: isActive ? 'drop-shadow(0 0 8px rgba(94, 23, 235, 0.7))' : 'none',
                           backgroundColor: 'transparent',
                           p: { md: 1, lg: 1.5 },
                           '&:hover': {
-                            color: '#0d47a1',
-                            backgroundColor: 'rgba(21, 101, 192, 0.1)',
+                            color: '#4a0d9e',
+                            backgroundColor: 'rgba(94, 23, 235, 0.1)',
                           },
                         }}
                       >
@@ -293,7 +293,7 @@ const NavBar = () => {
                               width: isMd ? 28 : 32,
                               height: 3,
                               borderRadius: 2,
-                              backgroundColor: '#1565c0',
+                              backgroundColor: '#5e17eb',
                               pointerEvents: 'none',
                             }}
                           />
@@ -317,10 +317,10 @@ const NavBar = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               sx={{
-                color: '#1565c0',
-                backgroundColor: 'rgba(21, 101, 192, 0.1)',
+                color: '#5e17eb',
+                backgroundColor: 'rgba(94, 23, 235, 0.1)',
                 '&:hover': {
-                  backgroundColor: 'rgba(21, 101, 192, 0.2)',
+                  backgroundColor: 'rgba(94, 23, 235, 0.2)',
                 },
               }}
             >

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Container, Typography, Paper, Grid, Divider } from '@mui/material';
+import { Box, Container, Typography, Paper, Grid, Divider, Fade } from '@mui/material';
+import { useMediaQuery } from '@mui/material';
 
 const summary = [
   {
@@ -124,67 +125,94 @@ const TimelineItem = ({ title, date, content }) => (
 );
 
 const CareerSection = () => {
+  const isExtraSmall = useMediaQuery('(max-width: 400px)');
+  const isSmallMobile = useMediaQuery('(max-width: 600px)');
+  
   return (
     <Box
-      id="career-section"
-      className="career-container"
+      id="resume"
+      className="resume-container"
       sx={{
         backgroundColor: '#fff',
-        py: { xs: 3, sm: 4, md: 6, lg: 8 },
-        px: { xs: 2, sm: 3 },
+        pt: 6,
+        pb: 8,
+        px: { xs: 3, md: 8 },
       }}
     >
+      <Fade in timeout={800}>
+        <Box sx={{ mb: { xs: 3, sm: 4, md: 5 }, textAlign: "center" }}>
+          <Typography
+            variant={isExtraSmall ? "h4" : isSmallMobile ? "h3" : "h3"}
+            component="h2"
+            fontWeight="bold"
+            sx={{
+              mb: { xs: 1.5, sm: 2 },
+              color: "#5e17eb",
+              fontSize: {
+                xs: "1.75rem",
+                sm: "2.125rem",
+                md: "3rem"
+              }
+            }}
+          >
+            Career Highlights
+          </Typography>
+
+          <Box sx={{
+            display: "flex",
+            justifyContent: "center",
+            mb: { xs: 2, sm: 3 },
+            px: { xs: 2, sm: 0 }
+          }}>
+            <Divider
+              sx={{
+                width: { xs: 50, sm: 60, md: 80 },
+                height: { xs: 2, md: 3 },
+                backgroundColor: "#e0e0e0"
+              }}
+            />
+            <Divider
+              sx={{
+                width: { xs: 50, sm: 60, md: 80 },
+                height: { xs: 2, md: 3 },
+                backgroundColor: "#5e17eb",
+                mx: 0.5,
+              }}
+            />
+            <Divider
+              sx={{
+                width: { xs: 50, sm: 60, md: 80 },
+                height: { xs: 2, md: 3 },
+                backgroundColor: "#e0e0e0"
+              }}
+            />
+          </Box>
+
+
+          <Typography
+            variant="body1"
+            color="text.secondary"
+            sx={{
+              maxWidth: { xs: "100%", sm: 600, md: 900 },
+              mx: "auto",
+              px: { xs: 1, sm: 2 },
+              lineHeight: { xs: 1.6, md: 1.8 },
+              mb: { xs: 3, sm: 4, md: 5 },
+              fontSize: { xs: "0.9rem", sm: "1rem", md: "1.1rem" }
+            }}
+          >
+            A detailed overview of my professional journey, education, and skills.
+            Committed to continuous learning and professional growth in the field of web development.
+          </Typography>
+        </Box>
+      </Fade>
+
       <Container 
         maxWidth="lg"
         sx={{
           px: { xs: 1, sm: 2, md: 3 }
         }}
       >
-        {/* Main Heading */}
-        <Box sx={{ 
-          mb: { xs: 4, sm: 5 }, 
-          textAlign: 'center',
-          px: { xs: 1, sm: 0 }
-        }}>
-          <Typography
-            variant="h3"
-            fontWeight="bold"
-            className="career-heading"
-            sx={{
-              color: '#222',
-              background: 'linear-gradient(to right, #5e17eb, #4313ad)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              fontSize: { xs: '1.75rem', sm: '2rem', md: '2.25rem', lg: '2.5rem' },
-              mb: { xs: 1.5, sm: 2 },
-              position: 'relative',
-              display: 'inline-block',
-              lineHeight: { xs: 1.2, md: 1.1 },
-              '&::after': {
-                content: '""',
-                position: 'absolute',
-                bottom: { xs: -6, md: -8 },
-                left: 0,
-                width: '100%',
-                height: { xs: 3, md: 4 },
-                backgroundColor: '#5e17eb',
-              },
-            }}
-          >
-            Career Highlights
-          </Typography>
-          <Divider
-            sx={{
-              width: { xs: 80, sm: 100, md: 120 },
-              height: { xs: 2, md: 3 },
-              backgroundColor: '#5e17eb',
-              mx: 'auto',
-              borderRadius: 2,
-              my: { xs: 1.5, sm: 2 },
-            }}
-          />
-        </Box>
-
         {/* Timelines Grid */}
         <Grid container spacing={{ xs: 4, sm: 5, md: 6 }}>
           {/* Left Column: Profile Overview & Work History */}

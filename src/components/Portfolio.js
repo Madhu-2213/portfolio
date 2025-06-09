@@ -11,6 +11,8 @@ import {
   Container,
   Fade,
   Divider,
+  useTheme,
+  useMediaQuery,
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import LaunchIcon from "@mui/icons-material/Launch";
@@ -82,7 +84,7 @@ const projects = [
   {
     title: "E-Commerce Website",
     description: "An e-commerce platform with cart, payment gateway, and admin dashboard.",
-    tech: ["HTML", "CSS", "JavaScript", "Firebase"],
+    tech: ["HTML", "CSS", "JavaScript"],
     year: "2024",
     image: "/images/SouWild.jpg",
     link: "https://sou-wild.web.app/",
@@ -103,8 +105,8 @@ const projects = [
     tech: ["React", "Material UI", "Framer Motion"],
     year: "2024",
     image: "/images/Pf.png",
-    link: "https://madhavi-vallabhaneni-22.web.app/",
-    github: "https://github.com/yourusername/portfolio"
+    link: "https://madhavi-vallabhaneni22.web.app/",
+    github: "https://github.com/Madhu-2213/portfolio"
   },
   {
     title: "Water Bottles Website",
@@ -116,7 +118,7 @@ const projects = [
     github: "https://github.com/Madhu-2213/H2GO-Water-Bottle"
   },
   {
-    title: "Diabetes Awareness Website",
+    title: "Diabetes Info Website",
     description: "A simple diabetes info site that helps users understand sugar levels and health tips. Built with HTML, CSS, and JavaScript. Hosted on Firebase.",
     tech: ["HTML", "CSS", "JavaScript"],
     year: "2024",
@@ -137,6 +139,9 @@ const projects = [
 
 // === Component ===
 const Portfolio = () => {
+  const theme = useTheme();
+  const isExtraSmall = useMediaQuery(theme.breakpoints.down('sm'));
+  const isSmallMobile = useMediaQuery(theme.breakpoints.down('md'));
   return (
     <Box
       id="portfolio"
@@ -151,12 +156,12 @@ const Portfolio = () => {
         <Fade in timeout={800}>
           <Box sx={{ mb: 5, textAlign: "center" }}>
             <Typography
-              variant="h3"
+              variant={isExtraSmall ? "h4" : isSmallMobile ? "h3" : "h3"}
               component="h2"
               fontWeight="bold"
               sx={{ mb: 2, color: "#5e17eb" }}
             >
-              Portfolio
+              Projects
             </Typography>
             <Box sx={{ display: "flex", justifyContent: "center", mb: 3 }}>
               <Divider sx={{ width: 80, height: 3, backgroundColor: "#e0e0e0" }} />
